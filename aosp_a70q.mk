@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The aosp Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -13,11 +13,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from a70q device
 $(call inherit-product, device/samsung/a70q/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_a70q
+PRODUCT_NAME := aosp_a70q
 PRODUCT_DEVICE := a70q
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A705
